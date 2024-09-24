@@ -193,7 +193,7 @@ document.getElementById('donationBtn')
 //click the blog btn and go to blog.html page
 document.getElementById('BlogBtn')
 .addEventListener('click', function(){
-    window.location.href = '/dom/index.html';
+    window.location.href = 'https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript';
 })
 
 
