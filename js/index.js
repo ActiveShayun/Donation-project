@@ -2,12 +2,6 @@
 
 // click EventListener
 
-// modal show btn 
-document.getElementById('modalBtn')
-.addEventListener('click', function(){
-    document.getElementById('modalShow').classList.add('hidden');
-});
-
 // button 1
 document.getElementById('btn1')
 .addEventListener('click', function(){
@@ -50,6 +44,7 @@ document.getElementById('btn2')
     const donation2 = GetInputStringValueById('donation2')
     const input2 = GetPinNumberInputValueById('input2')
     const time = new Date();
+
     if(input2 >= 1 && input2 < mainBalance){
         const balance2 = input2 + donation2;
         document.getElementById('donation2').innerText = balance2;
@@ -81,6 +76,7 @@ document.getElementById('btn3')
     const donation3 = GetInputStringValueById('donation3')
     const input3 = GetPinNumberInputValueById('input3')
     const time = new Date();
+
     if(input3 >= 1 && input3 < mainBalance){
         const balance3 = input3 + donation3;
         document.getElementById('donation3').innerText = balance3;
@@ -93,7 +89,7 @@ document.getElementById('btn3')
          <p>${input3} Tk Is Donated For Donate for Injured in the Quota Movement</p>
          <p>${time}</p>
          </div>
-         ` 
+         `;
       document.getElementById('card3').appendChild(v);
       document.getElementById('modalShow').classList.remove('hidden');
     }   
@@ -103,7 +99,7 @@ document.getElementById('btn3')
     else if (input3 <= 0 || isNaN(input3)){
         alert('Pleas Provide a Correct Amount')
     }
-   
+ 
 });
 
 // history section 
@@ -194,10 +190,18 @@ document.getElementById('donationBtn')
    )
 });
 
-// click the blog btn and go to blog.html page
+//click the blog btn and go to blog.html page
 document.getElementById('BlogBtn')
 .addEventListener('click', function(){
-    window.location.href = '/blog.html';
+    window.location.href = '/dom/index.html';
 })
+
+
+// modal show btn 
+document.getElementById('modalBtn')
+.addEventListener('click', function(){
+    document.getElementById('modalShow').classList.add('hidden');
+});
+
 
 
